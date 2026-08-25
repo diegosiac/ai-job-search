@@ -14,30 +14,35 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+<!-- Populated by /setup from Diego's actual experience. Answers are delivered in neutral professional Spanish; interviews are conducted in Spanish (English-required roles are disqualified before reaching an interview). -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 1. Reducción del 45.5% en costos de AWS en iVentas (optimización de costos, análisis de causa raíz)
+**S:** En iVentas, un CRM de WhatsApp para negocios de LATAM con crecimiento del 200% anual, el gasto en infraestructura de AWS crecía mes a mes sin que nadie tuviera claridad de a dónde se iba el dinero.
+**T:** Como responsable de la infraestructura, me propuse auditar el gasto completo, identificar los servicios más costosos y reducir el costo sin sacrificar rendimiento.
+**A:** Audité AWS Cost Explorer para identificar los servicios con mayor gasto. Al analizarlos encontré un pico anormal de egreso en S3; lo rastreé hasta la causa raíz: un error de caché a nivel de aplicación que provocaba descargas repetidas innecesarias. Corregí el error en el código y además reconfiguré varios recursos para aprovechar mejor su capacidad.
+**R:** El costo de infraestructura en AWS bajó aproximadamente 45.5%, con mejor rendimiento que antes. La auditoría de costos quedó como práctica recurrente.
+**Use for:** "Cuéntame de un problema difícil que resolviste", "¿Cómo has generado impacto medible?", "Háblame de una investigación técnica larga", perfiles de consultoría cloud/AWS.
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. De 2 caídas diarias a cero: Docker + ECS con autoescalado (confiabilidad, infraestructura)
+**S:** En iVentas, un servicio crítico sufría 2 caídas totales al día, de unos 30 minutos cada una, y afectaban a clientes grandes. El servicio era el cuello de botella de toda la plataforma.
+**T:** Necesitaba eliminar las caídas de forma definitiva, sin aumentar el costo de infraestructura, en un sistema en producción con tráfico real.
+**A:** Investigué a fondo el comportamiento del servicio bajo carga; fue una investigación larga, con mucha depuración y pruebas. Contenericé el servicio con Docker y lo desplegué en ECS con autoescalado basado en carga. Configuré el esquema de pago por uso de modo que el escalado no agregara costo fijo.
+**R:** Las caídas pasaron de 2 diarias a cero durante meses, sin costo adicional de AWS. Los clientes grandes dejaron de verse afectados.
+**Use for:** "Cuéntame de una situación de alta presión o incidentes en producción", "¿Cómo abordas problemas de escalabilidad?", "Describe una migración que hayas liderado".
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. Marketplace de Geekmobile entregado como freelance (entrega de punta a punta, autonomía)
+**S:** Iniciativa Geekmobile necesitaba un marketplace de dispositivos móviles y refacciones, y no tenía equipo de desarrollo; me contrataron como freelance para un proyecto cerrado de aproximadamente 6 meses (mayo a septiembre de 2023).
+**T:** Era el único desarrollador: tenía que construir el marketplace completo, de punta a punta, incluyendo el cobro en línea, y entregarlo dentro del plazo acordado.
+**A:** Diseñé y construí la aplicación completa: frontend, backend y la integración de la pasarela de pagos de PayPal. Gestioné yo mismo la comunicación con el cliente, los alcances y las prioridades durante todo el proyecto.
+**R:** Entregué el marketplace funcionando dentro del plazo del contrato, con pagos en línea operativos vía PayPal. Fue mi primera entrega completa como freelance independiente y la base de mi oferta actual de trabajo por proyecto.
+**Use for:** "¿Has trabajado como freelance o por proyecto?", "Cuéntame de un proyecto que hayas manejado solo", "¿Cómo gestionas alcances y plazos con un cliente?".
 
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 4. Adopción de desarrollo AI-native con Claude Code en iVentas (innovación, flujos de trabajo con IA)
+**S:** En iVentas, el equipo necesitaba entregar más rápido: había una migración del frontend legado hacia microservicios y microfrontends en curso, además del desarrollo continuo de producto.
+**T:** Quería integrar agentes de IA al flujo de desarrollo de forma seria, no como experimento aislado, y empujar a la empresa hacia un modelo de desarrollo AI-native.
+**A:** Construí herramientas internas que conectan agentes de IA, en particular Claude Code, con los sistemas de la empresa. Incorporé los agentes a la migración del frontend para acelerar la implementación y la revisión de código, siempre con revisión humana cuidadosa antes de integrar cambios.
+**R:** La entrega de funcionalidades se volvió notablemente más rápida manteniendo la calidad gracias a la revisión humana. La empresa avanzó hacia un flujo de desarrollo AI-native, y hoy soy el referente interno de estas herramientas.
+**Use for:** "¿Cómo usas la IA en tu trabajo?", "Cuéntame de una vez que introdujiste una mejora de proceso", "¿Cómo te mantienes actualizado?", roles de agentes de IA/chatbots.
 
 ## Common Tough Questions
 

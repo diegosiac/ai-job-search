@@ -6,6 +6,7 @@ framework_version: 1.1.0
 
 ## Critical Rules
 
+0. **All output documents in NEUTRAL PROFESSIONAL SPANISH.** Every CV, cover letter, profile statement, and application document is written in neutral professional Spanish: no regional slang or localisms, and no anglicisms where a natural Spanish term exists (write "desarrollé", not "developié"; "correo electrónico" is fine as "correo"). Established technical terms stay in their standard industry form (React, AWS, backend, frontend, Docker, Claude Code). This file's structure and the other skill files remain in English; the rule applies to the documents produced for employers.
 1. **NO em-dashes (--).**  Use commas, periods, or restructure the sentence instead.
 2. **NO cliches or filler phrases.** Cut: "I am passionate about", "I believe I would be a great fit", "leverage my skills", "hit the ground running", "drive results", "synergies".
 3. **NO generic buzzwords** without concrete backing. Every claim must be supported by a specific example or fact.
@@ -105,6 +106,6 @@ The cover letter is **not a CV repetition**. It should be forward-looking:
 - Frame advanced degrees as evidence of independent project delivery
 
 ## Multi-language Applications
-- Default to the language of the job posting
-- Cover letters in the posting's language should feel natural, not translated
-- Slightly warmer, more personal tone may be acceptable in some languages
+- **Default for this candidate: neutral professional Spanish, always.** The candidate targets the Spanish-speaking market and does not yet work in English; English-required postings are disqualified before drafting, so no English documents are produced.
+- Cover letters should feel natural in Spanish, not translated
+- Keep the tone warm but professional; avoid regional variants (no voseo, no local idioms)

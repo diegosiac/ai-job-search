@@ -4,6 +4,10 @@ framework_version: 1.0.1
 
 # Cover Letter Templates and Tailoring Guide
 
+## Language Rule (mandatory)
+
+All cover letter content is written in **neutral professional Spanish**: no regional slang or localisms, no anglicisms where a natural Spanish term exists. Standard technical terms (React, AWS, backend, Claude Code) stay in their industry form. Salutation: "Estimado/a [Nombre]," or "Estimado equipo de [Empresa],". Closing: "Atentamente,". Date in Spanish format (e.g., "11 de julio de 2026"). The candidate does not work in English; never produce an English cover letter.
+
 ## Template: Custom cover.cls (XeLaTeX)
 
 Cover letters use a custom LaTeX document class (`cover.cls`) with Lato/Raleway fonts.

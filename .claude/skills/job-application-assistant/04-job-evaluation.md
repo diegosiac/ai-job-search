@@ -4,7 +4,24 @@ framework_version: 1.1.0
 
 # Job Evaluation Framework
 
-<!-- SETUP: Skill match areas and career goals are personalized by running /setup -->
+## Automatic Disqualifiers (check FIRST, before scoring)
+
+Reject immediately, without scoring, if the posting has any of:
+- **English required** for the role (interviews, documentation, or daily communication in English) - the candidate's English is currently very low; this is an automatic disqualifier for now
+- Gambling/betting sector
+- Primary stack is WordPress, Java, C#, C++, or .NET
+- 90-day payment terms
+- Night shifts or on-call rotations
+- Full-time employment that would require leaving iVentas
+- Relocation or daily presence outside the CDMX metro area
+
+## Freelance-Fit Criteria (this candidate seeks contract work, not a job change)
+
+The candidate is employed at iVentas and looks for ADDITIONAL freelance/contract/external-collaborator engagements (~7 hours/day plus weekends available). Evaluate every posting on:
+- **Contract type:** freelance, contract, project-based, or external collaborator = good. Full-time employee roles = fail unless explicitly compatible with keeping iVentas.
+- **Payment terms:** per project, per hour, or retainer are all acceptable (no hard floor). 90-day payment terms = disqualifier. Prefer 30 days or less; flag 45-60 days.
+- **Scope clarity:** clear deliverables and boundaries = good. Vague "we need someone for everything, indefinitely" = flag for discussion.
+- **Schedule compatibility:** async/flexible = ideal. Fixed full-business-hours presence = flag (conflicts with iVentas).
 
 ## Eligibility Gate — run before scoring
 
@@ -44,9 +61,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** React, Next.js, TypeScript, Node.js (NestJS, Express, Hono), Go, AWS (ECS, EC2, S3, Lambdas, Cost Explorer), Docker, MongoDB, AI integrations, WhatsApp bots/chatbots, event-driven architecture, AWS cost optimization, AI-agent-assisted development (Claude Code)
+**Moderate match areas:** Python, Django, React Native, PostgreSQL, DynamoDB, Redis, MySQL, gRPC, Prisma, Firebase
+**Weak match areas / avoid:** Java, C#, C++, WordPress, .NET, native iOS/Android beyond React Native, anything requiring English
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -58,9 +75,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Fullstack web development for SaaS/startups (CRM, health, marketplace); AWS infrastructure ownership (ECS, autoscaling, cost control); AI chatbots/agents for WhatsApp; high-throughput messaging in Go; frontend product work in React/Next.js; freelance end-to-end delivery (Geekmobile marketplace with PayPal)
+**Moderate:** Backend-only roles (strong Node.js/Go, but no dedicated backend-title history); DevOps/platform roles (real AWS/Docker work, but no dedicated DevOps title); data-heavy roles (MongoDB/PostgreSQL modeling, no analytics/ML background)
+**Entry-level:** Mobile development (React Native knowledge without shipped-app history); team leadership beyond infrastructure lead for one product
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -75,10 +92,10 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+- Fully remote: PASS (ideal)
+- Hybrid within CDMX metro: PASS (acceptable)
+- Requires relocation or daily presence outside CDMX metro: FAIL (deal-breaker)
+- Frequent international travel: FLAG (discuss with user; English constraint also applies)
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -91,19 +108,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Build a freelance/contract portfolio alongside the iVentas role (fullstack primarily; frontend-only or backend-only gigs also fine)
+- Establish a consulting niche in AWS/cloud cost optimization (proven: ~45.5% reduction at iVentas)
+- Establish a delivery niche in AI agents/chatbots for WhatsApp (proven at iVentas)
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: AI agents in development workflows (Claude Code), system design, scaling, gradual migrations, database modeling, cost audits/optimization, long technical investigations
+- Tasks that drain: pure maintenance with no improvement scope, siloed work with no infrastructure or design input, legacy stacks on the avoid list (WordPress, Java, C#, C++)
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: employed at iVentas; freelance income is additional, so compensation is flexible (per project, per hour, or retainer; no hard floor) - but never 90-day payment terms
+- **Flexibility**: ~7 hours/day plus weekends available; must remain compatible with the iVentas commitment; no night shifts or on-call
+- **Professional development**: engagements that deepen AWS/cloud, AI-agent, and system-design expertise are worth more than generic dev work
 
 ### 6. Salary Benchmark (Optional)
 

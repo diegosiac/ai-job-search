@@ -59,13 +59,12 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \begin{document}
 \makecvtitle
 
-% 1. Profile statement (1-3 sentences, tailored per role)
+% 1. Profile statement (1-3 sentences, tailored per role, neutral Spanish)
 % 2. Skills section
-% 3. Education section
-% 4. Professional Experience section
-% 5. Selected Publications (if applicable)
-% 6. Honors and Awards (if applicable)
-% 7. References
+% 3. Professional Experience section
+% 4. Certifications section (AWS x2 - replaces Education, which is always omitted)
+% 5. Languages (Spanish native only - never claim English)
+% 6. References ("Disponibles a solicitud.")
 
 \end{document}
 ```
@@ -113,14 +112,18 @@ Write 5-7 lines that function as an "elevator pitch": a concise, compelling intr
 
 When the role sits outside your home domain, **lead with the domain-transfer argument** - the one or two sentences connecting your background to their problem (e.g. wave physics to radar signal processing) belong in the profile statement's opening, not buried in the cover letter. It is the strongest card a domain-changer holds; play it first.
 
-**Create 2-3 profile statement templates for your main role types:**
+**Language rule:** All CV content, including these profile statements, is written in **neutral professional Spanish** (no regional slang, no unnecessary anglicisms; standard technical terms like React, AWS, backend stay as-is). See 03-writing-style.md.
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**Profile statement templates for the main role types:**
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For fullstack freelance/contract roles:**
+> Desarrollador fullstack con experiencia de punta a punta en startups: infraestructura AWS (ECS, EC2, Lambdas), backend en Node.js y Go, y frontend en React y Next.js. En iVentas, CRM de WhatsApp para LATAM, reduje el costo de infraestructura AWS en 45.5% y eliminé las caídas totales del servicio (de 2 diarias a cero durante meses). Certificado AWS Developer Associate. Integro agentes de IA como Claude Code en el flujo de desarrollo para entregar más rápido con revisión humana cuidadosa. Disponible para proyectos freelance de manera remota o híbrida en CDMX.
+
+**For frontend roles:**
+> Desarrollador frontend con más de dos años construyendo productos SaaS en React, Next.js y TypeScript: una aplicación médica para consulta de análisis de laboratorio en Omica AI y tableros de analítica personalizados por cliente en iVentas, donde también lidero la migración gradual del frontend legado hacia microfrontends. Acelero la implementación y la revisión de código con agentes de IA como Claude Code. Disponible para proyectos freelance de manera remota o híbrida en CDMX.
+
+**For cloud/AWS consulting roles:**
+> Consultor de optimización de costos e infraestructura en AWS, con certificaciones AWS Cloud Practitioner y Developer Associate. En iVentas reduje el gasto de infraestructura en 45.5% auditando Cost Explorer y corrigiendo una fuga de egreso en S3 causada por un error de caché a nivel de aplicación, y eliminé las caídas totales del servicio (de 2 diarias a cero durante meses) al contenerizar con Docker el servicio crítico y desplegarlo en ECS con autoescalado por carga, sin costo adicional. Ofrezco auditorías y mejoras de costo y confiabilidad para equipos que operan en AWS.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
@@ -132,9 +135,8 @@ List **5-7 key competencies** in bullet format, tailored to the specific job. Fo
 Use the posting's own core term in the matching bullet's bold label when it truthfully applies - ATS and skim-reading hiring managers match literally, and "MLOps" in a heading outperforms a paraphrase like "ML Deployment".
 
 ### Education
-- Always include your highest degrees
-- For senior roles, keep education brief (dates and titles only)
-- Include thesis topics when relevant to the target role
+- **NEVER include an education section for this candidate (permanent user decision).** Background is high school plus an uncertified 6-month bootcamp; the two AWS certifications carry the credential weight instead. Do not add an education section to any generated CV, even if the posting asks for "estudios" - the Certifications section answers that. If an application form strictly requires an education field, ask the user before filling it in.
+- Always include the Certifications section (AWS Certified Cloud Practitioner; AWS Certified Developer - Associate) with issue dates and validation numbers available in 01-candidate-profile.md.
 
 #### In-progress qualifications must say so explicitly
 
@@ -291,21 +293,20 @@ Cut the lowest-total-score line first, regardless of which section it sits in.
 
 ## Recommended Section Order
 
-The section order varies by role type:
+The section order varies by role type (education is always omitted for this candidate):
 
-**For technical / data science / ML roles:**
-1. Profile statement / elevator pitch
+**For fullstack / frontend / backend contract roles:**
+1. Profile statement / elevator pitch (neutral Spanish)
 2. Core competencies / Skills
 3. Professional Experience (reverse chronological)
-4. Education (reverse chronological)
-5. Languages
-6. Publications & Awards
-7. References
+4. Certifications (AWS x2)
+5. Languages (Spanish native)
+6. References ("Disponibles a solicitud.")
 
-**For domain-specific / specialist roles:**
-1. Profile statement / elevator pitch
-2. Core competencies / Skills
-3. Education (reverse chronological) - credentials are a key qualifier
+**For cloud/AWS consulting roles:**
+1. Profile statement / elevator pitch (neutral Spanish)
+2. Certifications (AWS x2) - credentials are a key qualifier, move them up
+3. Core competencies / Skills (lead with AWS, Docker, cost optimization)
 4. Professional Experience (reverse chronological)
-5. Publications & Awards
-6. References
+5. Languages (Spanish native)
+6. References ("Disponibles a solicitud.")

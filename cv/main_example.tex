@@ -1,8 +1,10 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Diego Cruz
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
+%% Content language: neutral professional Spanish (see 03-writing-style.md).
+%% Education section intentionally omitted (permanent user decision - AWS
+%% certifications carry the credential weight). Never add it back.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -24,18 +26,19 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Diego Cruz - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
+\usepackage{needspace}
 
 % personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Diego}{Cruz}
+\address{Zona metropolitana de la Ciudad de México, México}{}{}
+\phone[mobile]{+52 5660839455}
+\email{diego35502@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/diegosiac}{LinkedIn}, \href{https://diegosiac.com}{diegosiac.com}}
 
 \begin{document}
 
@@ -46,25 +49,25 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Desarrollador fullstack con experiencia de punta a punta en startups: infraestructura AWS (ECS, EC2, Lambdas), backend en Node.js y Go, y frontend en React y Next.js. En iVentas, CRM de WhatsApp para LATAM, reduje el costo de infraestructura AWS en 45.5\% y eliminé las caídas totales del servicio (de 2 diarias a cero durante meses). Certificado AWS Developer Associate. Integro agentes de IA como Claude Code en el flujo de desarrollo para entregar más rápido con revisión humana cuidadosa. Disponible para proyectos freelance de manera remota o híbrida en CDMX.}
 
 % ============================================================
 %     CORE COMPETENCIES
 % ============================================================
 
-\section{Core Competencies}
+\section{Competencias principales}
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Frontend}: React, React Native, Next.js, TypeScript, JavaScript, Redux, TailwindCSS, HTML, CSS.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Backend}: Node.js (NestJS, Express, Hono), Go, Python, Django, Prisma, REST, gRPC, AWS Lambdas.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Cloud y DevOps}: AWS (ECS, EC2, S3, Lambdas, balanceo de carga, Cost Explorer, seguridad), Docker, CI/CD, GitHub Actions, Vercel, Railway, Firebase.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Bases de datos}: MongoDB, PostgreSQL, DynamoDB, Redis, MySQL, Firebase Realtime.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Prácticas}: arquitectura orientada a eventos, monorepos, estrategias de caché, código limpio, pruebas unitarias y de integración, desarrollo asistido por agentes de IA (Claude Code).
 
 \end{itemize}
 
@@ -72,56 +75,57 @@
 %     PROFESSIONAL EXPERIENCE
 % ============================================================
 
-\section{Professional Experience}
+\section{Experiencia profesional}
 \vspace{3pt}
 \begin{itemize}
 
 % --- Most Recent Role ---
-\item{\cventry{[YYYY--Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{2025--Actual}{Desarrollador Fullstack}{iVentas}{Ciudad de México (remoto/híbrido)}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Reduje el costo de infraestructura en AWS en 45.5\%: audité Cost Explorer, rastreé un pico de egreso en S3 hasta un error de caché a nivel de aplicación, lo corregí y reconfiguré los recursos para mejor aprovechamiento, con mayor rendimiento.
+    \item Eliminé las caídas totales del servicio: de 2 diarias (de unos 30 minutos cada una) a cero durante meses, al contenerizar con Docker el servicio cuello de botella y desplegarlo en ECS con autoescalado por carga, sin costo adicional de AWS.
+    \item Lidero la infraestructura del primer marketplace de agentes de IA para WhatsApp (latencia, experiencia de usuario y eficiencia de costos) y construí herramientas internas que conectan agentes de IA (Claude Code) con los sistemas de la empresa, acelerando la entrega de funcionalidades con revisión humana cuidadosa.
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Previous Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{2023--2025}{Desarrollador Frontend}{Omica AI}{Ciudad de México}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Construí una aplicación SaaS para que médicos consulten sus análisis de laboratorio y estudios clínicos, con React y Next.js.
+    \item Con el equipo, integré inteligencia artificial en la aplicación, incluida una integración novedosa que no se había realizado antes.
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Earlier Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{2023}{Desarrollador Fullstack (Freelance)}{Iniciativa Geekmobile}{Proyecto independiente (6 meses)}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+    \item Construí de punta a punta un marketplace de dispositivos móviles y refacciones, como único desarrollador del proyecto.
+    \item Integré la pasarela de pagos de PayPal y entregué el proyecto funcionando dentro del plazo del contrato.
 \end{itemize}}}
 
 \end{itemize}
 
 % ============================================================
-%     EDUCATION
+%     CERTIFICATIONS
 % ============================================================
 
-\section{Education}
+\section{Certificaciones}
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{2025}{AWS Certified Developer -- Associate}{Amazon Web Services}{}{}{\vspace{1pt}
+Emitida en enero de 2025, vigente hasta enero de 2028. Verificable en aws.amazon.com/verification (validación a8a9a3f811dd46edb547f40551308000).
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{2024}{AWS Certified Cloud Practitioner}{Amazon Web Services}{}{}{\vspace{1pt}
+Emitida en septiembre de 2024, vigente hasta enero de 2028. Verificable en aws.amazon.com/verification (validación 40391940f1624728b9520bd74e9330e8).
 }}
 
 \end{itemize}
@@ -130,40 +134,20 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 %     LANGUAGES
 % ============================================================
 
-\section{Languages}
+\section{Idiomas}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item Español (nativo).
 \end{itemize}
 
 % ============================================================
 %     REFERENCES
 % ============================================================
 
-\section{References}
+\section{Referencias}
 \vspace{1pt}
 \begin{itemize}
-\item{Available upon request.}
+\item{Disponibles a solicitud.}
 \end{itemize}
 
 \end{document}

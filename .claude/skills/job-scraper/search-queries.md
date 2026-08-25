@@ -1,6 +1,6 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
+<!-- Customized for Diego Cruz: freelance/contract fullstack developer, CDMX / remote LATAM, Spanish-language market -->
 
 ## Installed portal CLIs (primary for `/scrape`)
 
@@ -10,66 +10,98 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary (installed portal skills):
+- **occ-search** (occ.com.mx, OCC Mundial) - major Mexican job board; supports `--location` and `--jobage`
+- **computrabajo-search** (mx.computrabajo.com) - major Mexican job board; `--location` via URL slug, `--jobage` filtered client-side
+- **workana-search** (workana.com) - LATAM freelance marketplace (best fit for contract work); results are projects with budgets
+- **linkedin-search** (linkedin.com/jobs) - LinkedIn job listings (filter: Mexico / Ciudad de México / remote)
+
+Manual only (no CLI possible):
+- **indeed.com.mx** - blocks automated access (Cloudflare + robots.txt); browse manually and feed postings to `/apply` by URL or pasted text.
+
+Not applicable:
+- The built-in Danish portal CLIs (**jobindex, jobnet, jobbank, jobdanmark**) target the Danish market and MUST NOT be used for this profile.
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
 
 ## Query Categories
 
-Queries are grouped by priority. Each query should be combined with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Queries are grouped by priority. Combine each query with location terms (remoto, Ciudad de México, CDMX, México) where the site supports it. Prefer freelance/contract wording; the candidate is NOT looking for a full-time job change.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Freelance/contract fullstack (React / Node.js / Next.js)
 
-These match your strongest and most desired career direction.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+These match the strongest and most desired direction: contract fullstack work.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:mx.indeed.com "desarrollador fullstack" freelance remoto
+site:mx.indeed.com "desarrollador fullstack" "por proyecto" México
+site:mx.indeed.com "React" "Node.js" freelance remoto
+site:linkedin.com/jobs "desarrollador fullstack" freelance México
+site:linkedin.com/jobs "fullstack developer" "contract" remoto México
+site:linkedin.com/jobs "Next.js" freelance México
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 2: AI/chatbots/WhatsApp integrations + AWS/cloud consulting
 
-Adjacent roles you could pivot into.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
-```
-
-### Priority 4: Broader Technical / Consulting
-
-Wider net for general technical roles.
+These match the two positioning niches: AI agents/chatbots for WhatsApp (proven at iVentas) and AWS cost-optimization consulting (proven: 45.5% reduction).
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:mx.indeed.com "chatbot" WhatsApp desarrollador México
+site:mx.indeed.com "integraciones" "inteligencia artificial" desarrollador remoto
+site:mx.indeed.com "consultor AWS" OR "consultor cloud" México
+site:linkedin.com/jobs "desarrollador de chatbots" México
+site:linkedin.com/jobs "agentes de IA" desarrollador México
+site:linkedin.com/jobs "AWS" "optimización de costos" consultor México
 ```
+
+### Priority 3: Frontend-only / backend-only contract roles
+
+Narrower gigs the candidate also accepts.
+
+```
+site:mx.indeed.com "desarrollador frontend" React freelance remoto
+site:mx.indeed.com "desarrollador backend" Node.js freelance remoto
+site:mx.indeed.com "desarrollador backend" Go remoto México
+site:linkedin.com/jobs "desarrollador React" freelance México
+site:linkedin.com/jobs "desarrollador Node.js" contrato México
+```
+
+### Priority 4: Broader developer roles (wider net)
+
+General technical roles worth screening; filter hard on contract type and deal-breakers.
+
+```
+site:mx.indeed.com desarrollador web remoto México
+site:mx.indeed.com "freelance developer" México
+site:mx.indeed.com desarrollador TypeScript remoto
+site:linkedin.com/jobs "desarrollador de software" remoto México
+site:linkedin.com/jobs NestJS OR MongoDB desarrollador México
+```
+
+## Skill Search Terms
+
+Rotate these into custom queries: React, Next.js, Node.js, NestJS, Go, AWS, MongoDB, TypeScript.
+
+## Title Search Terms (Spanish)
+
+Desarrollador Fullstack, Desarrollador Frontend, Desarrollador Backend, Desarrollador React/Node.js, Freelance Developer, Desarrollador de chatbots/integraciones IA, Consultor AWS/Cloud.
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Location tiers when evaluating results:
+- **Ideal:** fully remote (anywhere, Spanish-speaking client)
+- **Acceptable:** hybrid within the CDMX metro area (zona metropolitana de la Ciudad de México)
+- **Too far (reject):** anything requiring relocation or daily presence outside the CDMX metro area
+
+## Deal-breaker Filters (drop postings that match any)
+
+- English required for the role (interviews or daily work in English)
+- Gambling/betting sector
+- WordPress, Java, C#, C++ or .NET as the primary stack
+- 90-day payment terms
+- Night shifts or on-call
+- Full-time employment incompatible with keeping the current iVentas role
 
 ## Date Filter
 
@@ -78,4 +110,5 @@ Only include jobs posted within the last 14 days, or with an application deadlin
 ## Adapting Queries
 
 If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+- "/scrape aws" -> Priority 2 cloud-consulting queries + custom AWS-focused queries
+- "/scrape chatbots" -> Priority 2 chatbot queries + custom WhatsApp/IA queries
