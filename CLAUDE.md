@@ -17,7 +17,15 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ### Identity
 - **Name:** Diego Cruz (legal name Diego de Jesús Crúz Vazquez - only for official forms, never on CV)
 - **Location:** Zona metropolitana de la Ciudad de México (CDMX), Mexico (remote ideal; hybrid acceptable within CDMX metro; no relocation)
-- **Languages:** Spanish (native). English: very low - cannot yet hold a conversation or read comfortably. Do not claim English on the CV.
+- **Languages:**
+  | Language | Level |
+  |----------|-------|
+  | Spanish | Native |
+  <!-- English is deliberately NOT declared. The candidate's English is very low (cannot yet hold a
+  conversation or read comfortably), so a posting that requires English as a job condition must FAIL
+  the Language Gate in 04-job-evaluation.md - this is the mechanism behind the "roles requiring
+  English" deal-breaker below. Never claim English on the CV; if a form asks for the level directly,
+  answer "básico" honestly. -->
 - **CV language:** Neutral professional Spanish (see Document language rule above; never English)
 - **Status:** Employed full-time at iVentas (effectively half-time workload); seeking ADDITIONAL freelance/contract/external-collaborator work, NOT a full-time job change
 - **LinkedIn:** linkedin.com/in/diegosiac | **Website:** diegosiac.com
@@ -76,7 +84,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - WordPress, Java, C#, C++ stacks
 - 90-day payment terms
 - Night shifts or on-call
-- Roles requiring English (automatic disqualifier for now)
+- Roles requiring English as a job condition (automatic disqualifier for now - enforced by the Language Gate, since English is intentionally not declared in the Languages table above)
 - Full-time job changes (keep iVentas); anything requiring relocation or daily presence outside CDMX metro
 
 ## Repo Structure
@@ -133,7 +141,7 @@ Both documents MUST be compiled and visually inspected via the Read tool on the 
 - [ ] **Cover letter bullet font matches body font** - `\lettercontent{}` must not wrap `\begin{itemize}...\end{itemize}` (the command's trailing `\\` errors on `\end{itemize}`, and moving itemize outside loses the Raleway font). Standard pattern: close `\lettercontent{}`, then wrap the list in `{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont \begin{itemize}...\end{itemize}\par}`
 
 ### ATS & keyword verification (CV)
-ATS parsers read the PDF's embedded text layer, not the rendered page. Extract it with `pdftotext -layout` and verify what a parser sees. `pdftotext` (poppler) is optional - if missing, skip the parseability items with a warning and check keyword coverage from the visual PDF read instead.
+ATS parsers read the PDF's embedded text layer, not the rendered page. Extract it with `python tools/verify_pdf.py cv/main_<company>_<role>.pdf --dump-text cv/main_<company>_<role>.txt` (pypdf, then `pdftotext -layout -enc UTF-8`) and verify what a parser sees. If both extractors are missing, skip the parseability items with a warning and check keyword coverage from the visual PDF read instead.
 - [ ] CV text layer extracts cleanly - no `(cid:*)` markers, `�` replacement characters, or text visible in the PDF but absent from the extraction
 - [ ] Email and phone appear as **literal text** in the extraction (icon-glyph noise like `MOBILE-ALT`/`Envelope` is harmless, but a contact detail carried only by an icon or hyperlink is invisible to ATS)
 - [ ] Reading order of the extracted text matches the visual order (single-column stock template is safe; multi-column custom templates are where this breaks)

@@ -1,5 +1,5 @@
 ---
-framework_version: 1.0.0
+framework_version: 1.1.1
 ---
 
 # Candidate Profile
@@ -11,10 +11,22 @@ framework_version: 1.0.0
 - **Phone:** +52 5660839455
 - **Email:** diego35502@gmail.com (primary; never use the hotmail address)
 - **LinkedIn:** https://linkedin.com/in/diegosiac
+- **GitHub:** https://github.com/diegosiac
 - **Website:** https://diegosiac.com
-- **Languages:** Spanish (native). English: very low - cannot yet hold a conversation or read comfortably. Honest constraint: never claim English proficiency on the CV.
 - **Status:** Employed full-time at iVentas (effectively half-time workload). Seeking ADDITIONAL freelance/contract/external-collaborator work, NOT a full-time job change.
 - **Constraints:** Remote ideal; hybrid acceptable within CDMX metro; no relocation. Availability for freelance: ~7 hours/day plus weekends.
+
+### Languages
+<!-- Every language you can work in professionally, with your honest level. Used by the
+Language Gate in 04-job-evaluation.md and by job-scraper/search-queries.md's query-language
+generation. Omit any language you don't actually work in - an undeclared language is treated as
+a hard no, not a gap to smooth over. -->
+
+| Language | Level | Notes |
+|----------|-------|-------|
+| Spanish | Native | All application documents are written in neutral professional Spanish |
+
+English is deliberately **not** declared: the candidate's English is very low (cannot yet hold a conversation or read comfortably), so any posting that requires English as a job condition FAILs the Language Gate - this is the mechanism behind the "English-required roles" deal-breaker. Never claim English proficiency on the CV; if a form asks for the level directly, answer "básico" honestly.
 
 ## Education
 **Intentionally omitted (user decision).** Background is high school plus an uncertified 6-month bootcamp; the AWS certifications carry the credential weight instead. **Never add an education section to any generated CV or profile document.** If a form strictly requires education, ask the user before filling it in.
