@@ -25,8 +25,7 @@ a hard no, not a gap to smooth over. -->
 | Language | Level | Notes |
 |----------|-------|-------|
 | Spanish | Native | All application documents are written in neutral professional Spanish |
-
-English is deliberately **not** declared: the candidate's English is very low (cannot yet hold a conversation or read comfortably), so any posting that requires English as a job condition FAILs the Language Gate - this is the mechanism behind the "English-required roles" deal-breaker. Never claim English proficiency on the CV; if a form asks for the level directly, answer "básico" honestly.
+| English | Very low (A1) | Cannot yet hold a conversation or read comfortably. Declared only so English-required postings are **FLAGged** for the user's judgment, never hard-FAILed (user decision, 2026-09-23). Treat ANY English requirement, even without a stated level, as FLAG - never a silent PASS. Never claim English proficiency on the CV; if a form asks for the level directly, answer "básico" honestly. |
 
 ## Education
 **Intentionally omitted (user decision).** Background is high school plus an uncertified 6-month bootcamp; the AWS certifications carry the credential weight instead. **Never add an education section to any generated CV or profile document.** If a form strictly requires education, ask the user before filling it in.
@@ -110,7 +109,7 @@ Fixed ~6-month engagement, delivered as an independent freelancer.
   2. AI agents / chatbots for WhatsApp (proven at iVentas: WhatsApp CRM, AI-agent marketplace)
 - **Modality:** remote, or hybrid within CDMX; NOT a full-time job change (keeps iVentas)
 - **Compensation:** flexible - per project, per hour, or retainer; no hard floor
-- **Deal-breakers:** gambling/betting sector, WordPress, Java, C#, C++, 90-day payment terms, night shifts/on-call, English-required roles (automatic disqualifier for now)
+- **Deal-breakers:** gambling/betting sector, WordPress, Java, C#, C++, 90-day payment terms, night shifts/on-call, English-required roles are flagged by the Language Gate, not auto-rejected (user decides case by case)
 - **Document language:** all application documents in neutral professional Spanish
 
 ## Publications

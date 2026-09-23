@@ -29,7 +29,7 @@ Secondary (company career pages via Google):
 
 ## Query Categories
 
-Queries are grouped by priority and written in Spanish only - the single language in the candidate's Languages table (see Language scope above). Combine each query with location terms (remoto, Ciudad de México, CDMX, México) where the site supports it. Prefer freelance/contract wording; the candidate is NOT looking for a full-time job change.
+Queries are grouped by priority and written in Spanish only: English is declared at A1 in the Languages table purely so English-required postings get flagged rather than rejected, not as a working language, so do not generate English query variants (see Language scope above). Combine each query with location terms (remoto, Ciudad de México, CDMX, México) where the site supports it. Prefer freelance/contract wording; the candidate is NOT looking for a full-time job change.
 
 **Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
 

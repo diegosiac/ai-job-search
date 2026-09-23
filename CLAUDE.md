@@ -21,11 +21,12 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   | Language | Level |
   |----------|-------|
   | Spanish | Native |
-  <!-- English is deliberately NOT declared. The candidate's English is very low (cannot yet hold a
-  conversation or read comfortably), so a posting that requires English as a job condition must FAIL
-  the Language Gate in 04-job-evaluation.md - this is the mechanism behind the "roles requiring
-  English" deal-breaker below. Never claim English on the CV; if a form asks for the level directly,
-  answer "básico" honestly. -->
+  | English | Very low (A1) - cannot yet hold a conversation or read comfortably |
+  <!-- English is declared ONLY so the Language Gate in 04-job-evaluation.md FLAGs English-required
+  postings for the user's own judgment instead of hard-FAILing them (user decision, 2026-09-23).
+  Any English requirement in a posting, even one that names no level, must be treated as FLAG -
+  never a silent PASS - because every realistic bar exceeds A1. Never claim English on the CV; if a
+  form asks for the level directly, answer "básico" honestly. -->
 - **CV language:** Neutral professional Spanish (see Document language rule above; never English)
 - **Status:** Employed full-time at iVentas (effectively half-time workload); seeking ADDITIONAL freelance/contract/external-collaborator work, NOT a full-time job change
 - **LinkedIn:** linkedin.com/in/diegosiac | **Website:** diegosiac.com
@@ -84,7 +85,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - WordPress, Java, C#, C++ stacks
 - 90-day payment terms
 - Night shifts or on-call
-- Roles requiring English as a job condition (automatic disqualifier for now - enforced by the Language Gate, since English is intentionally not declared in the Languages table above)
+- Roles requiring English as a job condition are NOT auto-rejected: the Language Gate FLAGs them (English is declared at A1) and the user decides case by case
 - Full-time job changes (keep iVentas); anything requiring relocation or daily presence outside CDMX metro
 
 ## Repo Structure
