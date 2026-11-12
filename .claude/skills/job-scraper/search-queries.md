@@ -31,11 +31,23 @@ Secondary (company career pages via Google):
 
 Queries are grouped by priority and written in Spanish only: English is declared at A1 in the Languages table purely so English-required postings get flagged rather than rejected, not as a working language, so do not generate English query variants (see Language scope above). Combine each query with location terms (remoto, Ciudad de México, CDMX, México) where the site supports it. Prefer freelance/contract wording; the candidate is NOT looking for a full-time job change.
 
+Each priority has two kinds of block. **Plain terms** blocks are what the portal CLIs consume: one term per line, one CLI call per term, no `OR`, no `site:` prefix, and no location (the CLI's location flag, or the city in `--query` where that portal's SKILL.md says so, carries it). Quote a multi-word phrase only if the portal's `Query syntax:` line says quoting is honoured. **WebSearch-only** blocks are Google syntax (`site:`, quotes, `OR`) for the fallback path and are never passed to a CLI.
+
 **Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
 
 ### Priority 1: Freelance/contract fullstack (React / Node.js / Next.js)
 
 These match the strongest and most desired direction: contract fullstack work.
+
+#### Plain terms (portal CLIs)
+
+```
+[YOUR_PRIMARY_JOB_TITLE_1]
+[YOUR_PRIMARY_JOB_TITLE_2]
+[YOUR_KEY_SKILL]
+```
+
+#### WebSearch-only (`site:` fallback)
 
 ```
 site:mx.indeed.com "desarrollador fullstack" freelance remoto
@@ -50,6 +62,15 @@ site:linkedin.com/jobs "Next.js" freelance México
 
 These match the two positioning niches: AI agents/chatbots for WhatsApp (proven at iVentas) and AWS cost-optimization consulting (proven: 45.5% reduction).
 
+#### Plain terms (portal CLIs)
+
+```
+[YOUR_DOMAIN_KEYWORD_1]
+[YOUR_DOMAIN_KEYWORD_2]
+```
+
+#### WebSearch-only (`site:` fallback)
+
 ```
 site:mx.indeed.com "chatbot" WhatsApp desarrollador México
 site:mx.indeed.com "integraciones" "inteligencia artificial" desarrollador remoto
@@ -63,6 +84,15 @@ site:linkedin.com/jobs "AWS" "optimización de costos" consultor México
 
 Narrower gigs the candidate also accepts.
 
+#### Plain terms (portal CLIs)
+
+```
+[YOUR_ADJACENT_TITLE_1]
+[YOUR_ADJACENT_TITLE_2]
+```
+
+#### WebSearch-only (`site:` fallback)
+
 ```
 site:mx.indeed.com "desarrollador frontend" React freelance remoto
 site:mx.indeed.com "desarrollador backend" Node.js freelance remoto
@@ -74,6 +104,15 @@ site:linkedin.com/jobs "desarrollador Node.js" contrato México
 ### Priority 4: Broader developer roles (wider net)
 
 General technical roles worth screening; filter hard on contract type and deal-breakers.
+
+#### Plain terms (portal CLIs)
+
+```
+[YOUR_KEY_SKILL] developer
+technical consultant
+```
+
+#### WebSearch-only (`site:` fallback)
 
 ```
 site:mx.indeed.com desarrollador web remoto México
@@ -113,7 +152,7 @@ Your working languages and levels are in CLAUDE.md's Languages table. When filte
 
 ## Date Filter
 
-Only include jobs posted within the last 14 days, or with an application deadline that has not yet passed. If a posting date cannot be determined, include it but flag as "date unknown".
+Only include jobs posted within the last 14 days, matching `/scrape` Step 1b.3: use a supported recency filter or filter the returned publication dates client-side. A future application deadline does not bypass this discovery window; `/rank` handles deadline expiry and urgency separately after discovery. If a posting date cannot be determined, include it but flag as "date unknown".
 
 ## Adapting Queries
 
