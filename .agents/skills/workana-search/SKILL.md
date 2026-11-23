@@ -48,6 +48,8 @@ volume low and don't use it commercially or for bulk data collection.
 bun run .agents/skills/workana-search/cli/src/cli.ts search [flags]
 ```
 
+Query syntax: not verified (every search returned 403 Forbidden on 2026-11-23); pass terms bare, without quotes or OR.
+
 Key flags:
 - `--query <text>` / `-q <text>` — keyword search (skill, tech, or role). Recommended. Spanish queries match best.
 - `--country <ISO2>` / `-c <ISO2>` — filter by **client country**, e.g. `MX`, `AR`, `CO`, `CL`, `PE`, `BR`, `ES`.

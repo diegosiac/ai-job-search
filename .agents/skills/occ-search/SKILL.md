@@ -38,6 +38,8 @@ sectors, updated in real time.
 bun run .agents/skills/occ-search/cli/src/cli.ts search [-q "<keywords>"] [-l "<place>"] [flags]
 ```
 
+Query syntax: phrase quoting not honoured (a double-quoted query reports the same total as the bare one); word order changes the results; OR not supported (verified 2026-11-23 by comparing the portal's reported totals).
+
 Key flags (at least one of `--query`/`--location` is required):
 - `--query <text>` / `-q <text>` — keywords (job title, skill, or role), e.g. `"desarrollador fullstack"`.
 - `--location <text>` / `-l <text>` — Mexican state or city, e.g. `"Ciudad de México"`, `"Guadalajara"`, `"Monterrey"`, `"Nuevo León"`. Accents are handled automatically.

@@ -42,6 +42,8 @@ robots.txt: it never sends the disallowed filter params (`pubdate=`, `sal=`, `co
 bun run .agents/skills/computrabajo-search/cli/src/cli.ts search --query "<role>" [flags]
 ```
 
+Query syntax: phrase quoting not honoured and word order ignored (bare, quoted and reversed queries report the same total); OR not supported (an OR query returns no results) (verified 2026-11-23).
+
 Key flags:
 - `--query <text>` / `-q <text>` — **required.** Role or keywords, e.g. `"desarrollador fullstack"`. Accents are handled (`"diseñador gráfico"` works).
 - `--location <text>` / `-l <text>` — optional city or state, e.g. `"Ciudad de México"`, `"Estado de México"`, `"Guadalajara"`, `"Monterrey"`, `"Jalisco"`. Omit to search all of Mexico.
