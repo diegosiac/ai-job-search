@@ -4,7 +4,7 @@
 
 ## Installed portal CLIs (primary for `/scrape`)
 
-`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; Danish demos and any skill you add with `/add-portal` are included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
+`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. None ship with AI Job Search: copy the ones for your market from [community-portals](https://github.com/ai-job-search-dev/community-portals) (e.g. `linkedin-search`, `freehire-search` under `portals/global/`), or build one with `/add-portal`. You do **not** need a matching `site:` line below for those CLIs to run.
 
 The `site:` query templates in this file are the **WebSearch fallback** — for portals without a CLI, company career pages, or when a CLI fails.
 
@@ -20,9 +20,6 @@ Primary (installed portal skills):
 
 Manual only (no CLI possible):
 - **indeed.com.mx** - blocks automated access (Cloudflare + robots.txt); browse manually and feed postings to `/apply` by URL or pasted text.
-
-Not applicable:
-- The built-in Danish portal CLIs (**jobindex, jobnet, jobbank, jobdanmark**) target the Danish market and MUST NOT be used for this profile.
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
